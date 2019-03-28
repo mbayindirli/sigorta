@@ -29,11 +29,6 @@ public class AgentServiceImpl implements AgentService {
     }
 
     @Override
-    public Iterable<Agent> findAllAgent() {
-        return agentRepository.findAll();
-    }
-
-    @Override
     public void destroyAgent(Long agentId) {
         agentRepository.deleteById(agentId);
     }
