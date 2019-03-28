@@ -26,8 +26,8 @@ public class PolicyServiceImpl implements PolicyService {
     }
 
     @Override
-    public Optional<Policy> findById(Long PolicyId) {
-        return policyRepository.findById(PolicyId);
+    public Optional<Policy> findById(Long policyId) {
+        return policyRepository.findById(policyId);
     }
 
     @Override
